@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Original Joe's</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap CSS https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Plugins.css -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<style>
+
+/***************/
+body {
+  margin: 0;
+  font-size:1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+/***************/
+
+
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+		</style>
+	<!-- Animate.css https://cdnjs.com/libraries/animate.css/
+		https://daneden.github.io/animate.css/ --> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<!-- Start Home Section --> 
+	<div id="home">
+		<!--Navigation-->
+		
+		<nav class="navbar navbar-expand-lg fixed-top "><!--Class to make the navbar black--> 
+			<div class="container-fluid"><!--Container to use the whole width of the screen -->
+			<a href="#home" class="navbar-brand"><img src="img/OJs_logo_SMALL.png" alt=""></a>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"> 
+					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarResponsive"> 
+					<ul class="navbar-nav ml-auto"><!--ml will align the menu to the left-->
+						<li class="nav-item"> 
+							<a href="#home" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+							  Inventory
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown"  bg-transparent text-white >
+							  <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/189Fy3Zg7uK-HQS7NupbXho3EOflb7qpA/edit?usp=sharing&ouid=116135652262590598922&rtpof=true&sd=true" target="_blank" >Bar Inventory</a></li>
+							  <li><a class="dropdown-item" href="#">Food Inventory</a></li>
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1SctAn2s6GwMbnosWiKZpkHbZDnvFnTLu/view?usp=share_link" target="_blank">GL Codes</a></li>
+							</ul>
+						 </li>
+						<!-- <li class="nav-item">
+							<a href="#features" class="nav-link">Inventory</a>
+						</li> -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Budget
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Sales & Report</a></li>
+							</ul>
+						 </li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Financial
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Tip Sheet</a></li>
+							  <li><a class="dropdown-item" href="#">Tip Out Form</a></li>
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="#">Banquet Tip Out Form</a></li>
+							</ul>
+						 </li>
+						 <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								New Hires
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Menu Description</a></li>
+							  <li><a class="dropdown-item" href="#">New Hire Packet & Handbook</a></li>
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="#">Rehire Paperwork</a></li>
+							</ul>
+						 </li>
+						 <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Incidents Forms
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Manager Guidelinies (Injury)</a></li>
+							  <li><a class="dropdown-item" href="#">Injury Treatment Locations</a></li>
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="#">Guest Injury</a></li>
+							  <li><a class="dropdown-item" href="#">Team Member Injury</a></li>
+							  <li><a class="dropdown-item" href="#">Refusal of Treatment</a></li>
+							</ul>
+						 </li>
+						 <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								FOH Service
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Server Line-Up</a></li>
+							</ul>
+						 </li>
+						 <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								BOH Service
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Kitchen Schedule</a></li>
+							  <li><a class="dropdown-item" href="#">Order Guides</a></li>
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="#">Line Checks</a></li>
+							  <li><a class="dropdown-item" href="#">Prep List</a></li>
+							  <li><a class="dropdown-item" href="#">Recipes</a></li>
+							</ul>
+						 </li>
+						 <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Performance
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Record of Discussion</a></li>
+							  <li><a class="dropdown-item" href="#">Performance Improvement Memo</a></li>
+							</ul>
+						 </li>
+						 <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Time Off-Request
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="#">Manager Guidelinies (Injury)</a></li>
+							</ul>
+						 </li>
+					</ul> 
+				</div>
+
+
+			</div>
+		</nav>
+		<!-- End of Navigation-->
+
+		<!-- Start landing Page image		-->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner">
+					<!--Inserting the video-->
+					<!--
+					<div class="pricing-column">
+					<div class="ribbon"></div>
+						<video id="video"  autoplay loop>
+							<source src="./img/SoFLo.mov" type="video/mp4">
+							
+						 Your browser does not support the video tag.
+						 </video>
+					</div> <!-- end div ribbon		-->
+				</div> <!-- end home-inner		-->
+			</div> <!-- end home-wrap		-->
+		</div>
+	
+		
+		
+
+
+		
+		<!-- End landing Page image		-->
+
+		<!-- Start landing Page Caption		-->
+
+		<div class="caption text-center text-light text-uppercase">
+			
+			<h1 class="font-weight-bold os-animation" 
+				data-animation="animate__animated animate__fadeInUp" data-delay=".6s">management documents</h1>
+				<!--
+				<img src="img/Soflo-trans.png" alt="Simply Easy Learning" width="230" height="280">--> 
+				<!-- <span class="text-nuno">SoFlo Vitality</span></h1> -->
+					
+				
+				<h2 class="os-animation"  data-animation="animate__animated animate__fadeInUp"
+				data-delay=".8s">original joe's - north beach</h2>
+				
+				<br>
+				
+				<!-- <a href="#features" class="btn btn-outline-light btn-lg rounded-0 os-animation" 
+				data-animation="animate__animated animate__fadeInUp" data-delay="1s">Book a free Assessment</a> -->
+		</div>
+		<a href="#features" class="down-arrow text-center">
+			<div class="arrow d-none d-md-block">
+				<i class="fas fa-angle-down"></i>
+			</div>
+		</a>
+
+		
+	</div>
+	<!-- End Home Section -->
+	
+	<!-- Start Features Section -->
+
+	<div id="features" class="offset">
+		
+		<div class="row text-center py-4 os-animation justify-content-center" 
+		data-animation="animate__animated animate__fadeInUp">
+			<div class="col-11 col-md-10 col-lg-9">
+				<h1>Find Documents About other Locations</h1>
+				<p class="lead">The Best Italian Restaurant in San Francisco - Original Joe's</p>
+					<a href="https://originaljoes.com/westlake/" class="btn btn-secondary btn-sm"  target="_blank">Westlake</a>
+					<a href="https://www.littleoriginaljoes.com/" class="btn btn-nuno btn-sm" target="_blank">Little Original Joe's</a>
+			</div>
+		</div>
+		
+			
+
+			
+		
+			
+
+	</div>
+		<!-- End Jumbotron	-->
+
+		<!-- Start Fixed BG MIG Dark -->
+
+		<div id="features" class="offset">
+			<!-- Start Theme Heading	-->
+			<!--
+			<div class="row text-center py-4 os-animation justify-content-center" 
+			data-animation="animate__animated animate__fadeInUp">
+				<div class="col-11 col-md-10 col-lg-9">
+					<h1>Some Information about SoFlo</h1>
+					<p class="lead">You face new challenges every day, we give you the tools to overcome them with member management, automated billing and robust reporting.</p>
+						<a href="#contact" class="btn btn-secondary btn-sm">Request a space</a>
+						<a href="#portfolio" class="btn btn-nuno btn-sm">Our Philosophy</a>
+				</div>
+			</div>-->
+			<!-- End Theme Heading		-->
+	
+			<!-- Start Jumbotron	-->
+			<div class="jumbotron m-0 py-5"><!-- m-0 allows to stop the main menu right in the jumbotron line-->
+				
+				
+	
+				
+				<!--
+				<div class="container">
+					<div class="row text-center px-lg-4 px-xl-5">
+	
+						<div class="col-sm-6 col-md-4 os-animation" data-animation="animate__animated animate__fadeInLeft">
+							<div class="features px-2">
+								 <span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<img src="img/keani-193.jpg" width= "6rem" hight="8rem" class="img-fluid" alt="...">
+									<i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
+								 </span>
+								 <h3>HIIT</h3>
+								 <p class="lead">HIIT, high intensity interval training, is a form of cardio, which increases your heart rate quickly and effectively in a shorter amount of time.
+								</p>
+							</div>
+						</div>
+	
+						<div class="col-sm-6 col-md-4 os-animation" data-animation="animate__animated animate__fadeInUp">
+							<div class="features px-2">
+								 <span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-desktop fa-stack-1x fa-inverse"
+										data-fa-transform="shrink-1  "></i>
+								 </span>
+								 <h3>Dynamic mobility</h3>
+								 <p class="lead">Dynamic mobility training, which focuses on opening up your joints through a full range of motion preparing you for movement. Mobility is the core principle for healthy longevity.</p>
+							</div>
+						</div>
+	
+						<div class="col-sm-6 col-md-4 os-animation" data-animation="animate__animated animate__fadeInRight">
+							<div class="features px-2">
+								 <span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-play fa-stack-1x fa-inverse" data-fa-transform="shrink-3.5 right-1"></i>
+								 </span>
+								 <h3>Hypertrophy Training</h3>
+								 <p class="lead"> 
+									Hypertrophy training, which is designed to build muscle endurance, build muscle mass, burn fat, and build strength
+								 </p>
+							</div>
+						</div>
+	
+						<div class="col-sm-6 col-md-4 os-animation" data-animation="animate__animated animate__fadeInLeft">
+							<div class="features px-2">
+								 <span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-angle-double-down fa-stack-1x fa-inverse"></i>
+								 </span>
+								 <h3>Paralax Scrolling</h3>
+								 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias voluptatibus nam adipisci quae cum ea minus tenetur, fuga porro dignissimos repellat aut enim recusandae saepe amet distinctio, laborum natus?</p>
+							</div>
+						</div>
+	
+						<div class="col-sm-6 col-md-4 os-animation" data-animation="animate__animated animate__fadeInUp">
+							<div class="features px-2">
+								 <span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-slider-h fa-stack-1x fa-inverse" data-fa-transform="shrink-1"></i>
+								 </span>
+								 <h3>Content Slider</h3> 
+								 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, officiis eius ipsa saepe corrupti amet quas aperiam impedit veniam. Tempore eaque ratione iure ex delectus odit magni nam velit officia.</p>
+							</div>
+						</div>
+	
+						<div class="col-sm-6 col-md-4 os-animation" data-animation="animate__animated animate__fadeInRight">
+							<div class="features px-2">
+								 <span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fab fa-wpforms fa-stack-1x fa-inverse"></i>
+								 </span>
+								 <h3>Contact Forms</h3>
+								 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias voluptatibus nam adipisci quae cum ea minus tenetur, fuga porro dignissimos repellat aut enim recusandae saepe amet distinctio, laborum natus?</p>
+							</div>
+						</div>
+	
+					</div><!-- End Row -->
+				<!--</div><!-- End Container -->
+	
+			</div>
+			<!-- End Jumbotron	-->	
+	
+	
+
+
+	 
+	
+
+	
+
+
+	<!-- 
+
+
+	<!-- Top Scroll -->
+	<a href="" class="top-scroll">
+		<i class="fa fa-angle-up"></i>
+	</a>
+	<!-- End of Top Scroll -->
+
+
+	<!-- Script Source Files -->
+
+	
+
+	<!-- jQuery https://code.jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<!-- Plugins.js -->
+	<script src="js/plugins.js"></script>
+	<!-- Waypoints https://cdnjs.com/libraries/waypoints
+		https://github.com/imakewebthings/waypoints -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.13.1/js/all.js -->
+	<script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
+		https://github.com/bfintal/Counter-Up2 -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+	<!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	 
+
+	<!-- End of Script Source Files -->
+
+</body> 
+</html>
