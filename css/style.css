@@ -31,8 +31,8 @@ html, body{
 
 /*============= NAVIGATION =============*/
 .navbar-brand img{
-   height: 3rem;
-   width: 9rem;
+   height: 4rem;
+   width: 12rem;
 }
 
 .navbar{
@@ -480,6 +480,7 @@ blockquote .svg-inline--fa {
 .form-group {
    margin-bottom: 1.3rem;
 }
+
 
 .form-control {
    background-color: #53595f;
