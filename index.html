@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Style.css -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.css">
 	<!-- Plugins.css -->
 	<link rel="stylesheet" href="css/plugins.css">
 	<!-- Google Fonts https://fonts.google.com/ -->
@@ -76,17 +77,18 @@ body {
 		
 		<nav class="navbar navbar-expand-lg fixed-top "><!--Class to make the navbar black--> 
 			<div class="container-fluid"><!--Container to use the whole width of the screen -->
-			<a href="#home" class="navbar-brand"><img src="img/OJs_logo_SMALL.png" alt=""></a>
+			 <a href="#home" class="navbar-brand"><img src="img/OJs_logo_SMALL.png" alt=""></a>
 			
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"> 
 					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
 				<div class="collapse navbar-collapse " id="navbarResponsive"> 
-					<ul class="navbar-nav ml-auto"><!--ml will align the menu to the left-->
-						<li class="nav-item"> 
+					<ul class="navbar-nav ml-auto">
+						<!--ml will align the menu to the left-->
+						<!-- <li class="nav-item"> 
 							<a href="#home" class="nav-link">Home</a>
-						</li>
-						<li class="nav-item dropdown">
+						</li> -->
+						 <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
 							  Inventory
 							</a>
@@ -96,16 +98,16 @@ body {
 							  <li><hr class="dropdown-divider"></li>
 							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1SctAn2s6GwMbnosWiKZpkHbZDnvFnTLu/view?usp=share_link" target="_blank">GL Codes</a></li>
 							</ul>
-						 </li>
+						 </li> 
 						<!-- <li class="nav-item">
 							<a href="#features" class="nav-link">Inventory</a>
 						</li> -->
-						<li class="nav-item dropdown">
+					 <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Budget
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Sales & Report</a></li>
+							  <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1LzZPRIpmfYHgRLRMSyzbTo54JLSCkHDdsTR4Fm9cC8E/edit?usp=sharing" target="_blank">Sales & Report</a></li>
 							</ul>
 						 </li>
 						<li class="nav-item dropdown">
@@ -113,10 +115,10 @@ body {
 								Financial
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Tip Sheet</a></li>
-							  <li><a class="dropdown-item" href="#">Tip Out Form</a></li>
+							  <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1iWjWSYw_4FozwTJyrWkqlCuIDxD5jSAC8yXeAKHmECc/edit?usp=sharing" target="_blank">Tip Sheet</a></li>
+							  <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1ykokQRVBvRhkZ_9nFUjLWXR1uPZH9CCi/edit?usp=sharing&ouid=116135652262590598922&rtpof=true&sd=true"  target="_blank">Tip Out Form</a></li>
 							  <li><hr class="dropdown-divider"></li>
-							  <li><a class="dropdown-item" href="#">Banquet Tip Out Form</a></li>
+							  <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1ZIZ2w5TAuGr-3kn1D0IHgtQHGjzUV-I2/edit?usp=sharing&ouid=116135652262590598922&rtpof=true&sd=true" target="_blank">Banquet Tip Out Form</a></li>
 							</ul>
 						 </li>
 						 <li class="nav-item dropdown">
@@ -124,10 +126,10 @@ body {
 								New Hires
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Menu Description</a></li>
-							  <li><a class="dropdown-item" href="#">New Hire Packet & Handbook</a></li>
+							  <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1LRsFLobfgDvUNUPLjtAwp988js3VLArifHSN7WWxuqA/edit?usp=sharing" target="_blank">Menu Description</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1zClJhdCMxXUeN8ZHYFLOVmqm49iAVuUU?usp=share_link" target="_blank">New Hire Packet & Handbook</a></li>
 							  <li><hr class="dropdown-divider"></li>
-							  <li><a class="dropdown-item" href="#">Rehire Paperwork</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1lgzvkPpkZkt8BpnLXROBuc1npN_bMlR4/view?usp=share_link" target="_blank">Rehire Paperwork</a></li>
 							</ul>
 						 </li>
 						 <li class="nav-item dropdown">
@@ -135,12 +137,12 @@ body {
 								Incidents Forms
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Manager Guidelinies (Injury)</a></li>
-							  <li><a class="dropdown-item" href="#">Injury Treatment Locations</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/18lsjrcmZH59r75kQJmnQGjyMhH3yuFPR/view?usp=share_link" target="_blank">Manager Guidelinies (Injury)</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1XdLXerNg_waJIsxHm0XK9g-KaUGhxzlT/view?usp=share_link" target="_blank">Injury Treatment Locations</a></li>
 							  <li><hr class="dropdown-divider"></li>
-							  <li><a class="dropdown-item" href="#">Guest Injury</a></li>
-							  <li><a class="dropdown-item" href="#">Team Member Injury</a></li>
-							  <li><a class="dropdown-item" href="#">Refusal of Treatment</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/18lsjrcmZH59r75kQJmnQGjyMhH3yuFPR/view?usp=share_link" target="_blank">Guest Injury</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1IurvhhIzTm2XKoOo-zKwK-3_4NBBXont/view?usp=share_link" target="_blank">Team Member Injury</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1C97xRdEPcVCGbK0KUA0c5U8Aqc61bs6Z/view?usp=share_link" target="_blank">Refusal of Treatment</a></li>
 							</ul>
 						 </li>
 						 <li class="nav-item dropdown">
@@ -148,7 +150,7 @@ body {
 								FOH Service
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Server Line-Up</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1ioAP-ebE6jXVq8b22tSVSUOgDY1K1CO-?usp=share_link" target="_blank">Server Line-Up</a></li>
 							</ul>
 						 </li>
 						 <li class="nav-item dropdown">
@@ -156,12 +158,12 @@ body {
 								BOH Service
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Kitchen Schedule</a></li>
-							  <li><a class="dropdown-item" href="#">Order Guides</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1wu_FTzpkmgmj0_QdYkGtxXXJbN_IWaaN?usp=share_link" target="_blank">Kitchen Schedule</a></li>
+							  <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1rMWdBFt5x0fCDcRQcztywz7e2BhCxSgj8pV43oXp9Hw/edit?usp=sharing" target="_blank">Order Guides</a></li>
 							  <li><hr class="dropdown-divider"></li>
-							  <li><a class="dropdown-item" href="#">Line Checks</a></li>
-							  <li><a class="dropdown-item" href="#">Prep List</a></li>
-							  <li><a class="dropdown-item" href="#">Recipes</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1kAu5F8-ykvD5qEj2B3E6NsTRwdLH6Z2G" target="_blank">Line Checks</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1KoykvOdvdMcAS1jwihkhPVnb5lzSIahE" target="_blank">Prep List</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1WyQHIMM6LHZqbCNVYEDnKLf4s9QX65xN" target="_blank">Recipes</a></li>
 							</ul>
 						 </li>
 						 <li class="nav-item dropdown">
@@ -169,22 +171,24 @@ body {
 								Performance
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Record of Discussion</a></li>
-							  <li><a class="dropdown-item" href="#">Performance Improvement Memo</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1oN7DnWl0fnOqr5Oxoq8UmBFo69MGAibI/view?usp=share_link" target="_blank">Record of Discussion</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1PGs7zPt-Ebxpg_NL8Ma1QxZAnD4ebU4-/view?usp=share_link" target="_blank">Performance Improvement Memo</a></li>
 							</ul>
 						 </li>
 						 <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Time Off-Request
+								Miscellaneous
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							  <li><a class="dropdown-item" href="#">Manager Guidelinies (Injury)</a></li>
+							  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1X4DqzCw550LohPkCuV5PpP_9L7E_tOrS/view?usp=share_link" target="_blank">Time Off-Request</a></li>
 							</ul>
 						 </li>
+
+						 
 					</ul> 
 				</div>
 
-
+				
 			</div>
 		</nav>
 		<!-- End of Navigation-->
