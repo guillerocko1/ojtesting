@@ -475,12 +475,15 @@ blockquote .svg-inline--fa {
    margin: 1.5rem 0;
 }
 
-
 /*--- Contact Form --*/
 .form-group {
    margin-bottom: 1.3rem;
 }
 
+.reserved {
+   color: #505962;
+   font-size: 0.8rem; 
+}
 
 .form-control {
    background-color: #53595f;
