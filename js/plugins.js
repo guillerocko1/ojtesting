@@ -22,19 +22,19 @@ $(document).ready(function () {
  
 
 /*========== CLOSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK ==========*/
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('.navbar-toggler').addClass('collapsed');
-    $('#navbarResponsive').removeClass('show');
+// $(document).on('click', 'a[href^="#"]', function (event) {
+//     event.preventDefault();
+//     $('.navbar-toggler').addClass('collapsed');
+//     $('#navbarResponsive').removeClass('show');
 
-    setTimeout(function () {
-        $('nav.navbar').removeClass('solid-toggle');
-    }, 300);
+//     setTimeout(function () {
+//         $('nav.navbar').removeClass('solid-toggle');
+//     }, 300);
 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
-})
+//     $('html, body').animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 1000);
+// })
 
 /*========== BOUNCING DOWN ARROW ==========*/
 $(document).ready(function () {
